@@ -1,0 +1,7 @@
+{
+    "require": {
+        "cboden/ratchet": "^0.3.4",
+        "bcosca/fatfree-core": "^3.5",
+        "twbs/bootstrap": "^3.3"
+    }
+}

@@ -1,0 +1,10 @@
+.idea
+/tmp
+/lib
+/vendor
+/build
+/old
+composer.phar
+composer.lock
+.DS_Store
+debug.log

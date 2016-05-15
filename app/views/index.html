@@ -1,0 +1,46 @@
+<html>
+<head>
+    <title>Webchat</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+
+</head>
+<body>
+
+<div style="text-align: center">
+    <h1> Welcome to Webchat</h1>
+    <br/>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="container" id="formContainer">
+
+            <form class="form-signin" id="login_student" role="form" action="/chat" method="post">
+                <h3 class="form-signin-heading">Login for Students</h3>
+                <br />
+                <a href="#" id="flipToRecover" class="flipLink">
+                    <div id="triangle-topright"></div>
+                </a>
+
+                <input type="text" class="form-control" name="nickname_student" id="nickname" placeholder="Nickname" required autofocus>
+                <br />
+                <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+            </form>
+
+            <form class="form-signin" id="login_prof" role="form" action="/chat" method="post">
+                <h3 class="form-signin-heading">Login for Professors</h3>
+                <a href="#" id="flipToLogin" class="flipLink">
+                    <div id="triangle-topleft"></div>
+                </a>
+                <input type="text" class="form-control" name="nickname_prof" id="nickname" placeholder="Nickname" required autofocus>
+                <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+            </form>
+
+        </div> <!-- /container -->
+    </div>
+</div>
+</body>
+</html>

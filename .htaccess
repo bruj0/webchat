@@ -1,0 +1,24 @@
+# Enable rewrite engine and route requests to framework
+RewriteEngine On
+
+# Some servers require you to specify the `RewriteBase` directive
+# In such cases, it should be the path (relative to the document root)
+# containing this .htaccess file
+#
+#RewriteRule "^css/(.*)$" "%{DOCUMENT_ROOT}/static/css/$1" [L]
+#RewriteRule "^economia/(.*)$" "%{DOCUMENT_ROOT}/static/economia/$1" [L]
+#RewriteRule "^img/(.*)$" "%{DOCUMENT_ROOT}/static/img/$1" [L]
+#RewriteRule "^lib/(.*)$" "%{DOCUMENT_ROOT}/static/lib/$1" [L]
+RewriteRule "success\/css/(.*)$" "%{DOCUMENT_ROOT}/css/$1" [L]
+RewriteRule "success\/js/(.*)$" "%{DOCUMENT_ROOT}/js/$1" [L]
+RewriteRule "success\/font-awesome\/css/(.*)$" "%{DOCUMENT_ROOT}/font-awesome/css/$1" [L]
+RewriteRule "success\/font-awesome\/fonts/(.*)$" "%{DOCUMENT_ROOT}/font-awesome/fonts/$1" [L]
+RewriteRule "success\/fonts/(.*)$" "%{DOCUMENT_ROOT}/fonts/$1" [L]
+RewriteRule "success\/img/(.*)$" "%{DOCUMENT_ROOT}/img/$1" [L]
+RewriteRule ^(app|dict|ns|tmp)\/|\.ini$ - [R=404]
+RewriteCond %{REQUEST_FILENAME} !-l
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule .* index.php [L,QSA]
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization},L]
+
