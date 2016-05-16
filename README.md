@@ -17,7 +17,9 @@ Make sure memcached is running on port 11211
 
 `
 $ git clone https://github.com/bruj0/webchat.git
+
 $ composer update
+
 $ php index.php /server
 `
 This will run the websocket server on port 8080.
