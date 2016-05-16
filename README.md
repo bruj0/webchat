@@ -12,6 +12,29 @@ Each one has a login id.
 * Twitter's Bootstrap: http://getbootstrap.com/
 * composer: http://getcomposer.org/
 
+## Installation and running
+Make sure memcached is running on port 11211
+
+$ git clone https://github.com/bruj0/webchat.git
+$ composer update
+$ php index.php /server
+
+This will run the websocket server on port 8080.
+
+Configure apache for serving the files:
+
+<VirtualHost LOCAL_IP:80>
+<Directory /path/to/webchat>
+    Options -Indexes FollowSymLinks
+    AllowOverride All
+    Allow from all
+</Directory>
+ServerName webchat.yourserver
+DocumentRoot /path/to/webchat
+</VirtualHost>
+
+Opena browser to: webchat.yourserver
+ 
 ## Problems and solutions
 
 * One of the biggest problems with websockets is that the server is separated from the web server.
