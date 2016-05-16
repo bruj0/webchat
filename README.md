@@ -23,7 +23,7 @@ $ php index.php /server
 This will run the websocket server on port 8080.
 
 Configure apache for serving the files:
-
+```
 <VirtualHost LOCAL_IP:80>
 <Directory /path/to/webchat>
     Options -Indexes FollowSymLinks
@@ -33,8 +33,8 @@ Configure apache for serving the files:
 ServerName webchat.yourserver
 DocumentRoot /path/to/webchat
 </VirtualHost>
-
-Opena browser to: webchat.yourserver
+```
+Open a browser to: webchat.yourserver
  
 ## Problems and solutions
 
