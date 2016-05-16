@@ -15,12 +15,11 @@ Each one has a login id.
 ## Installation and running
 Make sure memcached is running on port 11211
 
+`
 $ git clone https://github.com/bruj0/webchat.git
-
 $ composer update
-
 $ php index.php /server
-
+`
 This will run the websocket server on port 8080.
 
 Configure apache for serving the files:
