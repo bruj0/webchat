@@ -23,7 +23,7 @@ When the client refreshes the page and sends a new registration, the websocket s
 if found replace the websocketID instead of generating a new user registration.
 
 * Data integrity and race conditions.
-* 
+ 
 When developing a server that can answer to multiple clients asynchronously there is always a risk of race conditions.
 In this case when a Professor answer a question at the same time or very close that another does.
 
