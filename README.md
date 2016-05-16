@@ -62,10 +62,10 @@ This is because we use sessions from PHP that store the ID on a cookie and all i
 ## Performance under heavy load
 Care was taken to not use heavy lookup mechanism so that everything is found with hash tables,
 ie:
-
+```php
 $tmp['users'][$nick]['websocket_id'] = $from;
 $tmp['websocket'][$from]=&$tmp['users'][$nick];
-
+```
 Here we link the users record using his ID ($nick) with his websocket_id and his websocket ID ($from) to his user record.
 This way we can do hash lookups with his ID or websocket ID in one try.
 
