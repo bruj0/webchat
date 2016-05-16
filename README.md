@@ -9,8 +9,8 @@ Each one has a login id.
 * Websocket:  http://socketo.me/
 * Memcached: https://memcached.org/
 * Fatfreeframework: http://fatfreeframework.com/home
-* Twitter's Bootstrap: 
-* composer: getcomposer.org
+* Twitter's Bootstrap: http://getbootstrap.com/
+* composer: http://getcomposer.org/
 
 ## Problems and solutions
 
