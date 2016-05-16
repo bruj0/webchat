@@ -1,0 +1,20 @@
+<li class="left clearfix question" id="question_id_{{ @MSG.id }}">
+    <span class="chat-img pull-left">
+            <img src="http://placehold.it/50/55C1E7/fff&text=Q" alt="User Avatar" class="img-circle" />
+    </span>
+    <div class="chat-body clearfix">
+        <div class="header">
+            <strong class="primary-font">{{ @MSG.nick }}</strong> <small class="pull-right text-muted">
+            <span class="glyphicon glyphicon-time"></span>{{ @MSG.time }}</small>
+        </div>
+        <p>
+            {{ @MSG.text }}
+        </p>
+    </div>
+    <label for="answer_id_{{ @MSG.id }}">
+        <input type="radio" id="answer_id_{{ @MSG.id }}" name="question" value="{{ @MSG.id }}"/> Answer this question.
+        <br/>
+        <div id="intent_id_{{ @MSG.id }}"></div>
+    </label>
+</li>
+<br/>
