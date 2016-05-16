@@ -11,6 +11,9 @@ Each one has a login id.
 * Fatfreeframework: http://fatfreeframework.com/home
 * Twitter's Bootstrap: http://getbootstrap.com/
 * composer: http://getcomposer.org/
+* JSON as encapsulation of a simple protocol based on opcodes.
+* Javascript
+* PHP
 
 ## Installation and running
 Make sure memcached is running on port 11211
